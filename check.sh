@@ -26,7 +26,7 @@ for y in range(850,1000,2):
         if b>200 and 90<g<150 and r<120:  # the sample's accent #4F7CFF; change with your tokens
             best=(x,y,(r,g,b)); break
     if best: break
-print('first orange pixel', best)
+print('first accent pixel', best)
 # average over a 20px box around the dot centre found
 if best:
     x0,y0=best[0]+15,best[1]+15
