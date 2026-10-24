@@ -1,0 +1,4 @@
+node_modules/
+# renders, stills, contact sheets and audio: all reproducible from the source
+out/
+out-*.log

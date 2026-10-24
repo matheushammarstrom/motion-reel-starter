@@ -1,0 +1,20 @@
+{
+  "name": "motion-reel-starter",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A motion film rendered from code: a seek(t) page, closed-form springs, a shared clock, a synthesized score, a parallel headless-browser renderer and a critique loop. Built to be driven by Claude Code through the motion-reel skill.",
+  "scripts": {
+    "score": "node audio/score.mjs",
+    "stills": "node stills.mjs",
+    "render": "node render.mjs",
+    "animatic": "node render.mjs --scale 0.5 --fps 30 --sub 1",
+    "postinstall": "playwright install chromium"
+  },
+  "dependencies": {
+    "playwright": "^1.56.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
